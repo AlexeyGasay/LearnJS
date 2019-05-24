@@ -1,44 +1,44 @@
 // VERSION 1.0
 
-//function printFarmInventory(cows, chickens) {
-//    var cowString = String(cows);
-//    while(cowString.length < 3) {
-//        cowString = "0" + cowString;
-//    }
-//    console.log(cowString + "Cow");
-//    var chickenString = String(chickens);
-//    while(chickenString.length < 3) {
-//        chickenString = "0" + chickenString;
-//    }
-//    console.log(chickenString + "Chicken");
-//}
-//
-//
-//
-//console.log(printFarmInventory(7, 11));
+function printFarmInventory(cows, chickens) {
+    var cowString = String(cows);
+    while(cowString.length < 3) {
+        cowString = "0" + cowString;
+    }
+    console.log(cowString + "Cow");
+    var chickenString = String(chickens);
+    while(chickenString.length < 3) {
+        chickenString = "0" + chickenString;
+    }
+    console.log(chickenString + "Chicken");
+}
+
+
+
+console.log(printFarmInventory(7, 11));
 
 
 
 
 // VERSION 1.1
 
-//function printZeroPaddedWithLabel(number, label) {
-//    var numberString = String(number);
-//    while(numberString.length < 3)
-//        numberString = "0" + numberString;
-//    console.log(numberString + " " + label);
-//}
-//
-//
-//
-//
-//function printFarmInventory(cows, chickens, pigs) {
-//    printZeroPaddedWithLabel(cows, "Cows");
-//    printZeroPaddedWithLabel(chickens, "chickens");
-//    printZeroPaddedWithLabel(pigs, "Pigs");
-//}
-//
-//printFarmInventory(7, 11, 3);
+function printZeroPaddedWithLabel(number, label) {
+    var numberString = String(number);
+    while(numberString.length < 3)
+        numberString = "0" + numberString;
+    console.log(numberString + " " + label);
+}
+
+
+
+
+function printFarmInventory(cows, chickens, pigs) {
+    printZeroPaddedWithLabel(cows, "Cows");
+    printZeroPaddedWithLabel(chickens, "chickens");
+    printZeroPaddedWithLabel(pigs, "Pigs");
+}
+
+printFarmInventory(7, 11, 3);
 
 
 
@@ -46,22 +46,22 @@
 
 // VERSION 1.2 FINAL
 
-//function zerePad(number, width) {
-//    var string = String(number);
-//    while(string.length < width) 
-//        string = "0" + string;
-//    return string;
-//    
-//}
-//
-//function printFarmInventory(cows, chickens, pigs) {
-//    console.log(zerePad(cows, 3) + "Cow");
-//    console.log(zerePad(chickens, 3) + "Chickens");
-//    console.log(zerePad(pigs, 3) + "Pigs");
-//}
-//
-//
-//printFarmInventory(7, 12, 10);
+function zerePad(number, width) {
+    var string = String(number);
+    while(string.length < width) 
+        string = "0" + string;
+    return string;
+    
+}
+
+function printFarmInventory(cows, chickens, pigs) {
+    console.log(zerePad(cows, 3) + "Cow");
+    console.log(zerePad(chickens, 3) + "Chickens");
+    console.log(zerePad(pigs, 3) + "Pigs");
+}
+
+
+printFarmInventory(7, 12, 10);
 
 
 
@@ -87,12 +87,12 @@ console.log(min(2, 2));
 // 2.   Write a function that displays the number of characters specified
 
 function countsBs(str, char) {
-    var numB = 0;
+    var numChar = 0;
     for(var i = 0; i < str.length; i++) {
         if (str[i] == char)
-            numB += 1;
+            numChar += 1;
     }
-    return numB;
+    return numChar;
 }
 
 
