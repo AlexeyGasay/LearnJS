@@ -109,11 +109,6 @@ console.log(arrays.reduce(function(flat, current) {
 
 
 
-// 2 Write a function which work how as standatd is methods every and some
-
-
-
-
 
 
 
